@@ -25,3 +25,46 @@ appel("Nathan");
     console.log(number1 + number2);
 }
 double(5,3);
+
+
+// Exercice 3
+// Créez une fonction qui prendra en paramètre deux nombres :
+// le cout de faabrication d'un objet, et son prix de vente.
+// Votre fonction retournera le bénéfice de la vente de cet objet.
+
+/**
+ * Cette fonction (vente) permet de calculer le cout de fabrication d'un objet et son prix de vente en fonction des nombres passés en paramètres
+ * @param coutFabrication => String
+ * @param prixVente => String
+ * @returns => Chaine de caractère
+ */
+function vente(coutFabrication:number, prixVente:number) :string {
+    let profit:number = prixVente - coutFabrication;
+    let perte:number = coutFabrication - prixVente;
+    if (prixVente <= coutFabrication) {
+       return `Perte de ${perte}`;
+    } else {
+        return `Gain de ${profit}`;
+    };
+}
+console.log(vente(15,15));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function exemple(param:type) :type {
+//     let nomVariable:type = ;
+//     return "";
+// }
+//
+// si "else" pas besoin de mettre le "return "" " 
+// si "else if" besoin de mettre le "return "" " 

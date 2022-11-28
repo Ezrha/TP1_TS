@@ -2,8 +2,8 @@
 // Votre fonction retournera le nombre de billets et de pièces nécessaires pour obtenir ce nombre.
 
 /**
- * Retourne le nombre de billets et de pièces nécéssaires pour obtenir le nombre mit en paramètre
- * @param nombre 
+ * Retourne le nombre de billets et de pièces nécéssaires pour obtenir le nombre en paramètre
+ * @param nombre Valeur à identifier
  */
 function monnaie(nombre:number): void {
     const monnaies: number[] = [500, 200, 20, 10, 5, 2, 1, .50, .20, .10, .05, .02, .01];
